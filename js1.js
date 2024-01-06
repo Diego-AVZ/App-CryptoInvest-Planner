@@ -9,8 +9,6 @@ var token1 = {
     risk : "low"
 };
 
-console.log(token1.price.buyBottom);
-
 var token2 = {
     name : "SMT",
     narrative : "RWA",
@@ -22,20 +20,6 @@ var token2 = {
     risk : "high"
 };
 
-var allTokens = [token1, token2]
-var firstFilter = [];
-
-function seeListAlgo() {
-    for(var i = 0; i < allTokens.length; i++) {
-        if (allTokens[i].risk == "high") {
-            firstFilter.push(allTokens[i].name);
-            console.log("list token: " + allTokens[i].name);
-        }
-    }
-}
-
-seeListAlgo();
-
 var token3;
 var token4;
 var token5;
@@ -45,13 +29,40 @@ var token8;
 var token9;
 var token10;
 
+//_____________________________________________________________________________________________________
+
 var investorType; //Cons or Risky
 
 var amountToInvest;
 
-var narrative1;
-var narrative2;
-var narrative3;
-var narrative4;
-var narrative5;
+var goal;
 
+
+
+var all = [
+    token1,
+    token2,
+    token3,
+    token4,
+    token5,
+    token6,
+    token7,
+    token8,
+    token9,
+    token10
+  ];
+  
+var filter1 = []; // Investor Type : Conservative, Moderate or Aggressive
+var filter2 = []; // Potencial: x5, x10, x25, x50, >x50
+var filter3 = []; // Narrative: ISO, IOT, IA, DePIN, Priv, L1, L2, RWA, gaming, DID, DeFi, modular
+var filter4 = []; // Big Investors/partners: yes / no
+var filter5 = []; // 
+
+function seeListAlgo() {
+    for(var i = 0; i < all.length; i++) {
+        if (all[i].risk == "high") {
+            filter1.push(all[i].name);
+            console.log("list token: " + all[i].name);
+        }
+    }
+}
