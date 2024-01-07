@@ -37,7 +37,7 @@ var token2 = {
     },
     risk : "low",
     pot : "x5",  // potencial profit
-    big : "yes", // investors
+    big : "yes", // investors¡`+
     stra1 : {
         yon : "yes", // There is a strategy 1? yes/no
         sRisk : "mid",
@@ -143,20 +143,22 @@ var xs;
 
 function setInvCons() {
     investorType = "cons";
-    // seePot();
+    seePot();
 }
 
 function setInvMod() {
     investorType = "mod";
-    // seePot();
+    seePot();
 }
 
 function setInvAggr() {
     investorType = "aggr";
-    // seePot();
+    seePot();
 }
 
-/*
+var amountIn = document.getElementById("in1");
+
+
 function setAmount() {
     amountToInvest = amountIn.value;
 }
@@ -220,7 +222,7 @@ document.getElementById("l2").addEventListener("click", function(){
 document.getElementById("l3").addEventListener("click", function(){
     investorLevel = "exp";
 }) 
-*/
+
 
 var all = [
     token1,
