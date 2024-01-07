@@ -1,0 +1,170 @@
+#box {
+    position: absolute;
+    background: linear-gradient(20deg, rgba(255, 255, 255, 0.596), rgba(195, 242, 255, 0.482));
+    width: 80vw;
+    height: 80vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0.5vw;
+    box-shadow: 10px 10px 25px rgba(1, 0, 51, 0.767);
+    overflow: hidden;
+}
+
+#t {
+    position: absolute;
+    color: #030363;
+    font-size: 2vw;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: rgb(149, 190, 215);
+}
+
+#cB {
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    background-color: #030363;
+    color: white;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 2vw;
+    font-size: 1.2vw;
+    border-style: none;
+    box-shadow: -2px 2px 2px rgb(109, 108, 108);
+    transition: ease, 0.3s;
+} #cB:hover {cursor: pointer; background-color: #030363ac; box-shadow: 0px 0px 0px rgb(109, 108, 108); 
+    margin-top: 20.5vh;
+    margin-left: 9.9vw;
+    border-style: solid;
+    border-color: rgb(0, 157, 255);
+    background-color: white;
+    color: black;
+}
+
+#mB {
+    position: absolute;
+    margin-top: 39vh;
+    margin-left: 15vw;
+    background-color: #030363;
+    color: white;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 2vw;
+    font-size: 1.2vw;
+    border-style: none;
+    box-shadow: -2px 2px 2px rgb(109, 108, 108);
+    transition: ease, 0.3s;
+} #mB:hover {cursor: pointer; background-color: #030363ac; box-shadow: 0px 0px 0px rgb(109, 108, 108); 
+    margin-top: 39.5vh;
+    margin-left: 14.9vw;
+    border-style: solid;
+    border-color: rgb(0, 157, 255);
+    background-color: white;
+    color: black;
+}
+
+#aB {
+    position: absolute;
+    margin-top: 60vh;
+    margin-left: 10vw;
+    background-color: #030363;
+    color: white;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 2vw;
+    font-size: 1.2vw;
+    border-style: none;
+    box-shadow: -2px 2px 2px rgb(109, 108, 108);
+    transition: ease, 0.3s;
+} #aB:hover {cursor: pointer; background-color: #030363ac; box-shadow: 0px 0px 0px rgb(109, 108, 108); 
+    margin-top: 60.5vh;
+    margin-left: 9.9vw;
+    border-style: solid;
+    border-color: rgb(0, 157, 255);
+    background-color: white;
+    color: black;
+}
+
+#cir {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #030363ac;
+    border-radius: 15vw;
+    margin-top: 20vh;
+    margin-left: -20vh;
+}
+
+#box2 {
+    position: absolute;
+    background-color: #030363ac;
+    width: 20vw;
+    height: 50vh;
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%,-50%);
+    border-radius: 0.5vw;
+    overflow: hidden;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.623);
+}
+
+#in1 {
+    position: absolute;
+    width: 10vw;
+    height: 3vh;
+    margin-top: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.5vw;
+    border-color: rgb(0, 47, 255);
+    border-style: none;
+    box-shadow: -1px 1px 3px rgb(0, 0, 0);
+    outline: none;
+    text-align: center;
+}
+
+#goal {
+    position: absolute;
+    width: 13vw;
+    margin-top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+}
+
+.gB {
+    position: relative;
+    border-radius: 0.4vw;
+    width: 4vw;
+    height: 4vh;
+    background-color: rgb(195 242 255 / 48%);
+    border-style: none;
+    margin-top: 5px;
+    margin-left: 3px;
+    font-weight: bold;
+    padding-top: 2px;
+    color: #ffffff;
+    text-shadow: 0px 1px 3px rgb(0,0,0);
+    box-shadow: 0px 1px 3px rgb(0,0,0);
+    float: left;
+} .gB:hover{cursor: pointer; background-color: rgba(195, 242, 255, 0.861);}
+
+#t21 {
+    position: absolute;
+    color:white;
+    margin-top: 3vh;
+    margin-left: 2vw;
+}
+
+#t22 {
+    position: absolute;
+    color:white;
+    margin-top: 16vh;
+    margin-left: 2vw;
+}
