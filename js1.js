@@ -140,6 +140,8 @@ var investorLevel;
 
 var xs;
 
+var narra = [];
+
 
 function setInvCons() {
     investorType = "cons";
@@ -163,6 +165,11 @@ function setAmount() {
     amountToInvest = amountIn.value;
 }
 
+function seeGoal() {
+    var formattedGoal = goal.toLocaleString('en-US');
+
+    document.getElementById("dti1").innerText = "$" + formattedGoal;
+}
 
 function seePot() {
     if(investorType == "cons") {
@@ -186,42 +193,79 @@ function seePot() {
     }
 }
 
+var rx = document.getElementById("rx2");
+var px = document.getElementById("px2");
+
 document.getElementById("g1").addEventListener("click", function(){
     xs = 5;
+   setAmount();
     goal = amountToInvest * 5;
+    seeGoal();
+    rx.style.width = "2vw";
+    px.style.width = "8vw";
+
 }) 
 
 document.getElementById("g2").addEventListener("click", function(){
     xs = 10;
+   setAmount();
     goal = amountToInvest * 10;
+    seeGoal();
+    rx.style.width = "3vw";
+    px.style.width = "7vw";
+   
 }) 
 
 document.getElementById("g3").addEventListener("click", function(){
     xs = 15;
+   setAmount();
     goal = amountToInvest * 15;
+    seeGoal();
+    rx.style.width = "4vw";
+    px.style.width = "6vw";
 }) 
 
 document.getElementById("g4").addEventListener("click", function(){
     xs = 25;
+   setAmount();
     goal = amountToInvest * 25;
+    seeGoal();
+    rx.style.width = "5vw";
+    px.style.width = "4vw";
+   
 })
 
 document.getElementById("g5").addEventListener("click", function(){
     xs = 50;
+   setAmount();
     goal = amountToInvest * 50;
+    seeGoal();
+    rx.style.width = "7vw";
+    px.style.width = "3vw";
+   
 }) 
 
-document.getElementById("l1").addEventListener("click", function(){
+document.getElementById("xpB1").addEventListener("click", function(){
     investorLevel = "new";
 }) 
 
-document.getElementById("l2").addEventListener("click", function(){
+document.getElementById("xpB2").addEventListener("click", function(){
     investorLevel = "med";
 }) 
 
-document.getElementById("l3").addEventListener("click", function(){
+document.getElementById("xpB3").addEventListener("click", function(){
     investorLevel = "exp";
 }) 
+
+document.getElementById("n1").addEventListener("click", function(){
+    narra.push("AI");
+}) 
+
+document.getElementById("n2").addEventListener("click", function(){
+    narra.push("IOT");
+}) 
+
+
 
 
 var all = [
@@ -267,3 +311,15 @@ function seeListAlgo() {
         }
     console.log("filter2 = " + filter2);
 }
+
+function next() {
+    console.log("interval ON")
+    if (investorType != undefined && amountToInvest != undefined && goal != undefined && investorLevel != undefined && narra.length != 0) {
+        document.getElementById("box").style.left = "41%";
+        document.getElementById("goB").style.marginLeft = "84vw";
+        console.log("doing IF ")
+    }
+
+}
+
+setInterval(next, 1000);
