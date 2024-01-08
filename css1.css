@@ -1,6 +1,20 @@
+#dev {
+    position: absolute;
+    color: #030363;
+    margin-top: 0vh;
+    font-size: 0.8vw;
+}
+
+#back1 {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
 #box {
     position: absolute;
-    background: linear-gradient(20deg, rgba(255, 255, 255, 0.596), rgba(195, 242, 255, 0.482));
+    background: linear-gradient(20deg, rgba(255, 255, 255, 0.696), rgba(195, 242, 255, 0.682));
     width: 80vw;
     height: 80vh;
     left: 50%;
@@ -9,13 +23,14 @@
     border-radius: 0.5vw;
     box-shadow: 10px 10px 25px rgba(1, 0, 51, 0.767);
     overflow: hidden;
+    transition: ease, 2s;
 }
 
 #t {
     position: absolute;
     color: #030363;
-    font-size: 2vw;
-    margin-top: 5vh;
+    font-size: 3vw;
+    margin-top: 3vh;
     margin-left: 3vw;
     font-weight: bold;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -23,6 +38,7 @@
 
 body {
     background-color: rgb(149, 190, 215);
+    overflow: hidden;
 }
 
 #cB {
@@ -116,7 +132,7 @@ body {
 
 #in1 {
     position: absolute;
-    width: 10vw;
+    width: 13vw;
     height: 3vh;
     margin-top: 8vh;
     left: 50%;
@@ -124,9 +140,11 @@ body {
     border-radius: 0.5vw;
     border-color: rgb(0, 47, 255);
     border-style: none;
-    box-shadow: -1px 1px 3px rgb(0, 0, 0);
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
     outline: none;
     text-align: center;
+    font-size: 1vw;
+    font-weight: bold;
 }
 
 #goal {
@@ -167,4 +185,234 @@ body {
     color:white;
     margin-top: 16vh;
     margin-left: 2vw;
+}
+
+#dt1 {
+    position: absolute;
+    color:white;
+    margin-top: 33vh;
+    margin-left: 2vw;
+}
+
+#dti1 {
+    position: absolute;
+    color:white;
+    margin-top: 36vh;
+    margin-left: 2vw;
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+
+#rx1 {
+    position: absolute;
+    margin-top: 41vh;
+    margin-left: 6vw;
+    width: 10vw;
+    height: 10px;
+    background-color: rgb(127 153 194);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+#rx2 {
+    position: absolute;
+    margin-top: 0vh;
+    margin-left: 0.01vw;
+    width: 0vw;
+    height: 10.1px;
+    background-color: rgb(0 30 225);
+    border-radius: 10px 0px 0px 10px;
+    transition: ease, 1s;
+}
+
+#rt1 {
+    position:absolute;
+    color:white;
+    margin-top: 40.5vh;
+    margin-left: 2vw;
+}
+
+#px1 {
+    position: absolute;
+    margin-top: 45.5vh;
+    margin-left: 6vw;
+    width: 10vw;
+    height: 10px;
+    background-color: rgb(127 153 194);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+#px2 {
+    position: absolute;
+    margin-top: 0vh;
+    margin-left: 0.01vw;
+    width: 0vw;
+    height: 10.1px;
+    background-color: rgb(49, 75, 246);
+    border-radius: 10px 0px 0px 10px;
+    transition: ease, 1s;
+}
+
+#pt1 {
+    position:absolute;
+    color:white;
+    margin-top: 45vh;
+    margin-left: 2vw;
+}
+
+#box3 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.518);
+    width: 20vw;
+    height: 50vh;
+    margin-left: 55vw;
+    top: 54%;
+    transform: translateY(-50%);
+    border-radius: 0.5vw;
+    overflow: hidden;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.623);
+    border-style: none;
+    border-color: rgba(0, 13, 18, 0.6);
+}
+
+#xpT1 {
+    position:absolute;
+    color:#030363;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+#xpB1 {
+    position: absolute;
+    margin-top: 7vh;
+    margin-left: 2vw;
+    background-color: #030363;
+    color: white;
+    width: 6vw;
+    height: 3vh;
+    border-radius: 2vw;
+    font-size: 1.1vw;
+    border-style: none;
+    box-shadow: -2px 2px 2px rgb(109, 108, 108);
+    transition: ease, 0.3s;
+    padding-left: 1.3vw;
+} #xpB1:hover {cursor: pointer; background-color: #030363ac; box-shadow: 0px 0px 0px rgb(109, 108, 108); 
+    margin-top: 7.5vh;
+    margin-left: 1.9vw;
+    border-style: solid;
+    border-color: rgb(0, 157, 255);
+    background-color: white;
+    color: black;
+}
+
+#xpB2 {
+    position: absolute;
+    margin-top: 11vh;
+    margin-left: 2vw;
+    background-color: #030363;
+    color: white;
+    width: 11vw;
+    height: 3vh;
+    border-radius: 2vw;
+    font-size: 1.1vw;
+    border-style: none;
+    box-shadow: -2px 2px 2px rgb(109, 108, 108);
+    transition: ease, 0.3s;
+    padding-left: 3vw;
+} #xpB2:hover {cursor: pointer; background-color: #030363ac; box-shadow: 0px 0px 0px rgb(109, 108, 108); 
+    margin-top: 11.5vh;
+    margin-left: 1.9vw;
+    border-style: solid;
+    border-color: rgb(0, 157, 255);
+    background-color: white;
+    color: black;
+}
+
+#xpB3 {
+    position: absolute;
+    margin-top: 15vh;
+    margin-left: 2vw;
+    background-color: #030363;
+    color: white;
+    width: 15vw;
+    height: 3vh;
+    border-radius: 2vw;
+    font-size: 1.1vw;
+    border-style: none;
+    box-shadow: -2px 2px 2px rgb(109, 108, 108);
+    transition: ease, 0.3s;
+    padding-left: 10vw;
+} #xpB3:hover {cursor: pointer; background-color: #030363ac; box-shadow: 0px 0px 0px rgb(109, 108, 108); 
+    margin-top: 15.5vh;
+    margin-left: 1.9vw;
+    border-style: solid;
+    border-color: rgb(0, 157, 255);
+    background-color: white;
+    color: black;
+}
+
+#narra {
+    position: absolute;
+    width: 15vw;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 27vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.nC {
+    position: relative;
+    margin-left: 0.5vw;
+    margin-top: 5px;
+    background-color: #ffffff;
+    border-radius: 1vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: -2px 2px 2px rgb(109, 108, 108);
+    transition: ease, 0.5s;
+} .nC:hover {cursor: pointer; background-color: #030363; color: #ffffff;}
+
+#narT {
+    position:absolute;
+    color:#030363;
+    margin-top: 22vh;
+    margin-left: 2vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+#goB {
+    position: absolute;
+    display: block;
+    margin-top: 65vh;
+    margin-left: 104vw;
+    background-color: #030363;
+    color: white;
+    width: 13vw;
+    height: 20vh;
+    border-radius: 5vw;
+    font-size: 2vw;
+    font-weight: bolder;
+    border-style: none;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0);
+    transition: ease, 3s;
+} #goB:hover {cursor: pointer; background-color: #030363ac; box-shadow: 0px 0px 0px rgb(109, 108, 108); 
+    margin-top: 20.5vh;
+    margin-left: 70.9vw;
+    border-style: solid;
+    border-color: rgb(0, 157, 255);
+    background-color: white;
+    color: black;
 }
