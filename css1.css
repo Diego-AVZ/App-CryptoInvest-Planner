@@ -14,7 +14,7 @@
 
 #box {
     position: absolute;
-    background: linear-gradient(20deg, rgba(255, 255, 255, 0.696), rgba(195, 242, 255, 0.682));
+    background: linear-gradient(20deg, rgba(255, 255, 255, 0.696), rgba(195, 228, 255, 0.682));
     width: 80vw;
     height: 80vh;
     left: 50%;
@@ -171,6 +171,7 @@ body {
     text-shadow: 0px 1px 3px rgb(0,0,0);
     box-shadow: 0px 1px 3px rgb(0,0,0);
     float: left;
+    transition: ease, 0.2s;
 } .gB:hover{cursor: pointer; background-color: rgba(195, 242, 255, 0.861);}
 
 #t21 {
@@ -384,6 +385,11 @@ body {
     transition: ease, 0.5s;
 } .nC:hover {cursor: pointer; background-color: #030363; color: #ffffff;}
 
+.nC.clicked {
+    background-color: #030363;
+    color: white;
+}
+
 #narT {
     position:absolute;
     color:#030363;
@@ -415,4 +421,19 @@ body {
     border-color: rgb(0, 157, 255);
     background-color: white;
     color: black;
+}
+
+#black {
+    position: absolute;
+    background-color: black;
+    display: none;
+    width: 20vw;
+    height: 35vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    box-shadow: -5px 5px 1000px rgb(0,0,0);
+    padding: 3vw;
+    border-radius: 2vw;
 }
